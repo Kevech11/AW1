@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,700&display=swap');
+*{
+    box-sizing: border-box;   
+    padding: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    
+}
+body{
+    background-color: antiquewhite;
+    margin: 0;
+}
+
+.header{                                        /*navegador*/
+    background-color: rgb(31, 31, 78);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 105px;
+    padding:25px 10%;   
+    position: fixed;
+    z-index: 100;  
+}
+.header .logo img{
+   height: 85px;
+   width: auto;
+   margin-right: 80px;   
+   margin-left: -60px;
+}
+.header .carrito img{
+    margin-right: -145px;
+    height: 35px;
+    width: auto;   
+}
+.header .nav-links{
+    list-style: none; 
+}
+.header .nav-links li{
+    display: inline-block;
+    padding: 0 20px;   
+}
+.header .nav-links li:hover{
+    transform: scale(1.1);
+}
+.header .nav-links a{
+    font-size: 700;
+    color: antiquewhite;
+    text-decoration: none;
+}
+.ul-second{                 /*categorias*/
+    position: absolute;
+    display: none;
+    color: antiquewhite;
+}
+.header .nav-links li a:hover{
+    color:  rgb(240, 240, 32);
+}
+.header .btn button{               /*Iniciar sesion*/
+    font-weight: 700;
+    color:  rgb(31, 31, 78);
+    padding: 9px 25px;
+    background: antiquewhite;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin-right: -103px;
+}
+.header .btn button:hover{
+    background-color: antiquewhite;
+    color:  rgb(240, 240, 32);
+    transform: scale(1.1);
+}
+
+.slider-box{                         /*imagenes grandes*/
+    width: 1350px;
+    height: 755px;
+    overflow: hidden;
+}    
+.slider-box ul{
+    display: flex;
+    padding: 0;
+    margin: 0px;
+    width: 400%;
+    animation: slide 20s infinite alternate ease-in-out;
+}
+.slider-box li{
+    width: 100%;
+    list-style: none;
+    position: relative;
+}
+
+@keyframes slide{                   /*imagenes grandes*/
+    0% {margin-left: 0;}
+    20%{margin-left: 0;}
+
+    25% {margin-left: -150%;}
+    45% {margin-left: -150%;}  /*revisar*/
+
+    50% {margin-left: -280%;}
+    70% {margin-left: -280%;}
+
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+
+    /*100% {margin-left: -400%;}
+    140% {margin-left: -400%;}*/
+}
+
+#title {                                
+    color: rgb(31, 31, 78);
+    text-align: center;
+    margin: 0px;
+}
+
+.flex-container{                                /*primera seccion*/
+    display: flex;    
+    width: 1240px;
+    margin: 65PX;
+    margin-left: 55px;
+    justify-content: space-between;  
+}
+.text{
+    margin: 0px;
+    display: flex;
+    text-align: center;
+}
+.flex-container .dinero img{
+   display: flex;
+   height: 130px;
+   width: 130px;
+   margin-left: 145px;
+   margin-bottom: 14px;
+}
+.flex-container .envios img{
+    display: flex;
+    height: 130px;
+    width: 130px;
+    margin-left: 135px;
+    margin-bottom: 15px;
+    
+}
+.flex-container .ubicacion img{
+    display: flex;
+    height: 130px;
+    width: 130px;
+    margin-left: 149px;
+    margin-bottom: 14px;
+}
+
+.flex-container2{                       /*Segunda seccion*/
+    display: flex;    
+    width: 1240px;
+    height: 650px;
+    margin-left: 35px; 
+    align-items: center;
+}
+
+.flex-container2-1{                     /*segunda seccion - quienes somos*/
+    display: flex;
+    margin-right: 35px;
+    margin: 0;
+    margin-bottom: 50px;  
+}
+.flex-container2-1 img{
+    height: 520px;
+    width: 100;
+    margin-left: 35px;
+}
+
+.informacion{      
+    margin-left: 25px;
+    text-align: center;   
+}
+.informacion-2{      
+    margin-left: 15px;
+    text-align: center;   
+    margin-top: 150px;
+    margin-right: 10px;
+}
+.text2{
+    text-align: right;
+    text-align: center; 
+}
+
+.flex-container3{                       /*Tercera seccion*/
+    margin: 55px;
+}
+.text3{
+    text-align: center;
+}
+.carrusel ul{                           /*Imagenes-marcas*/
+ list-style: none;
+ margin: 0;
+ padding: o;
+ margin-left: 35px;
+}
+.carrusel-fotos{
+    display: flex;
+    gap: 45px;
+    overflow: auto;
+}
+.carrusel-fotos img{
+    width: 200px;
+    height: 105px;
+}
+
+.flex-container4{                         /*cuarta seccion*/
+    display: flex;    
+    width: 1240px;
+    margin: 66PX;
+    margin-left: 40px;
+    justify-content: space-between;  
+    
+    
+}
+.text4{
+    margin: 0px;
+    display: flex;
+    text-align: center;
+}
+.flex-container4 .box-ingresos img{
+   
+   display: flex;
+   height: 110px;
+   width: 135px;
+   margin-left: 145px;
+   margin-bottom: 14px;
+   
+}
+
+.pie-pagina{                            /*footer*/
+    width: 100%;
+    background-color: rgb(31, 31, 78);   
+    
+}
+.pie-pagina .grupo-1 {
+    width: 100%;
+    display: flex;
+    padding: 10px 0px;
+    border: 5px solid red;
+    justify-content: space-between;
+}
+.pie-pagina .grupo-1 > * {
+    border: 5px solid green;
+}
+figure {
+    margin: 0;
+}
+/* 
+    font-
+    text-
+
+    font-size: 40px
+
+    h1 -> 32px
+    p -> 16px
+    small -> 12px
+*/
+.pie-pagina .grupo-1 .box figure img{
+    width: 100px;
+    height: 95px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: antiquewhite;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: antiquewhite;
+    margin-bottom: 5px;
+}
+.pie-pagina .grupo-1 .box p img{
+    margin-bottom: -5px;
+    height: 25px;
+    width: 25px;
+    margin-right: 3px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    color: antiquewhite;
+    height: 45px;
+    line-height: 45px;
+    margin-right: 10px;
+    text-align: center;
+    background-color: rgb(21, 21, 95);
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: rgb(240, 240, 32);
+}
+.pie-pagina .grupo-2{
+    padding: 15px 10px;
+    background-color: rgb(21, 21, 95);
+    text-align: center;
+    color: antiquewhite;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+
