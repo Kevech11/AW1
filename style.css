@@ -210,23 +210,19 @@ body{
     width: 1240px;
     margin: 66PX;
     margin-left: 40px;
-    justify-content: space-between;  
-    
-    
+    justify-content: space-between;    
 }
 .text4{
     margin: 0px;
     display: flex;
     text-align: center;
 }
-.flex-container4 .box-ingresos img{
-   
+.flex-container4 .box-ingresos img{ 
    display: flex;
    height: 110px;
    width: 135px;
    margin-left: 145px;
    margin-bottom: 14px;
-   
 }
 
 .pie-pagina{                            /*footer*/
@@ -238,25 +234,15 @@ body{
     width: 100%;
     display: flex;
     padding: 10px 0px;
-    border: 5px solid red;
+    
     justify-content: space-between;
 }
-.pie-pagina .grupo-1 > * {
+/*.pie-pagina .grupo-1 > * {
     border: 5px solid green;
-}
+}*/
 figure {
     margin: 0;
 }
-/* 
-    font-
-    text-
-
-    font-size: 40px
-
-    h1 -> 32px
-    p -> 16px
-    small -> 12px
-*/
 .pie-pagina .grupo-1 .box figure img{
     width: 100px;
     height: 95px;
@@ -300,4 +286,9 @@ figure {
 .pie-pagina .grupo-2 small{
     font-size: 15px;
 }
-
+.pie-pagina .box .ubic{
+    color: antiquewhite;   
+}
+.pie-pagina .box .ubic img{
+    margin-bottom: -5px;
+}
