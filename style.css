@@ -56,7 +56,7 @@ body{
     top: 23px;
     background-color: blanchedalmond;
     padding: 10px;
-    border-radius: 20px;
+    border-radius: 9px;
     box-shadow: 1px 1px 5px gray;
     /* text-shadow, box-shadow, drop-shadow */
     /* x y blur color */
@@ -69,9 +69,6 @@ body{
     flex-direction: column;
     gap: 10px;
 }
-/* .productos {
-    height: 70px;
-} */
 .header .nav-links li a:hover{
     color:  rgb(240, 240, 32);
 }
@@ -309,23 +306,42 @@ figure {
     margin-bottom: -5px;
 }
 
-.all-products{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    height: 20px;
-    width: 10px;
-}
-.all-products .product {
-    overflow: hidden;
+form{  
+    margin-left: 100px;
+    padding: 55px 40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
     text-align: center;
-    width: 240px;
-    height: 340px;
+    width: 340px;
+    margin-top: 130px;
+    margin-bottom: 30px;
+}
+.input-group{
     display: flex;
-    padding: 2rem;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 1.2rem;
+    text-align: left;
+    gap: 3px;
+}
+h2.contact{
+    color: rgb(21, 21, 95);
+    font-size: 25px;
+}
+label{
+    color: rgb(21, 21, 95);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.form-txt{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.btn{
+    font-size: 16px;
+    margin-top: 8px;
+}
+.contactos{
+    display: flex;
 }
