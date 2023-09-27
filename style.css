@@ -34,6 +34,8 @@ body{
 }
 .header .nav-links{
     list-style: none; 
+    display: flex;
+    justify-content: space-around;
 }
 .header .nav-links li{
     display: inline-block;
@@ -47,11 +49,29 @@ body{
     color: antiquewhite;
     text-decoration: none;
 }
-.ul-second{                 /*categorias*/
-    position: absolute;
+.desplegable {
+    position: absolute; 
     display: none;
-    color: antiquewhite;
+    list-style: none;
+    top: 23px;
+    background-color: blanchedalmond;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px gray;
+    /* text-shadow, box-shadow, drop-shadow */
+    /* x y blur color */
 }
+.desplegable-anchor {
+    color: black !important;
+}
+.productos:hover .desplegable {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+/* .productos {
+    height: 70px;
+} */
 .header .nav-links li a:hover{
     color:  rgb(240, 240, 32);
 }
@@ -159,7 +179,7 @@ body{
 .flex-container2-1{                     /*segunda seccion - quienes somos*/
     display: flex;
     margin-right: 35px;
-    margin: 0;
+    padding-top: 130px;
     margin-bottom: 50px;  
 }
 .flex-container2-1 img{
@@ -210,42 +230,38 @@ body{
     width: 1240px;
     margin: 66PX;
     margin-left: 40px;
-    justify-content: space-between;    
+    justify-content: space-between;
 }
 .text4{
     margin: 0px;
-    display: flex;
     text-align: center;
 }
 .flex-container4 .box-ingresos img{ 
-   display: flex;
+   
    height: 110px;
    width: 135px;
-   margin-left: 145px;
+   margin-left: 35px;
    margin-bottom: 14px;
 }
 
 .pie-pagina{                            /*footer*/
     width: 100%;
-    background-color: rgb(31, 31, 78);   
-    
+    background-color: rgb(31, 31, 78);    
 }
 .pie-pagina .grupo-1 {
     width: 100%;
     display: flex;
-    padding: 10px 0px;
-    
+    padding: 10px 0px;    
     justify-content: space-between;
 }
-/*.pie-pagina .grupo-1 > * {
-    border: 5px solid green;
-}*/
 figure {
     margin: 0;
 }
 .pie-pagina .grupo-1 .box figure img{
     width: 100px;
     height: 95px;
+    margin-top: 20px;
+    margin-left: 10px;
 }
 .pie-pagina .grupo-1 .box h2{
     color: antiquewhite;
@@ -291,4 +307,25 @@ figure {
 }
 .pie-pagina .box .ubic img{
     margin-bottom: -5px;
+}
+
+.all-products{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 20px;
+    width: 10px;
+}
+.all-products .product {
+    overflow: hidden;
+    text-align: center;
+    width: 240px;
+    height: 340px;
+    display: flex;
+    padding: 2rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.2rem;
 }
