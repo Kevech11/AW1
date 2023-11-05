@@ -14,21 +14,24 @@
             <div class="circle-3"></div>
             <div class="box">
                 <h3>Bienvenido</h3>
-                <form action="">
+                <form>
                     <div class="input-box">
-                        <input type="text" placeholder="Email" class="input-control">
+                        <input type="text" id="email" placeholder="Email" class="input-control">
                     </div>
                     <div class="input-box">
-                        <input type="password" placeholder="Password" class="input-control">
+                        <input type="password" id="password" placeholder="Password" class="input-control">
                         <div class="input-link">
                             <a href="recuperar.html" class="gradient-text">Has olvidado tu contraseña</a>
                         </div>
                     </div>
-                    <button type="submit" class="btn">Iniciar Sesión</button>
+                    <button id="loguear" class="btn">Iniciar Sesión</button>
                 </form>
                 <p>No tienes una cuenta? <a href="signup.html" class="gradient-text">Crear cuenta</a></p>
             </div>
         </div>
      </section>
+
+     <script src="../../lib/utils.js"></script>
+     <script src="./login.js"></script>
 </body>
 </html>

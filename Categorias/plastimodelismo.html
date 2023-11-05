@@ -19,15 +19,20 @@
                     <ul class="desplegable">
                         <li><a class="desplegable-anchor" href="">Plastimodelismo</a></li>
                         <li><a class="desplegable-anchor" href="./Rompecabezas.html">Rompecabezas</a></li>
-                        <li><a class="desplegable-anchor" href="./pinturas.html">Pinturas</a></li>
+                        <li><a class="desplegable-anchor" href="./pinturas.html">Pinturas/Herramientas</a></li>
                     </ul>
                 </li>
                 <li><a href="../navbar/contacto.html">Contacto</a></li>            
             </ul>
         </nav>    
-        <a href="/page/login/login.html" class="btn"><button>Iniciar Sesión</button></a>
+        <a id="button-iniciar-sesion" href="/page/login/login.html" class="btn">
+            <button>Iniciar Sesión</button>
+        </a>
+        <a id="button-cerrar-sesion" href="/index.html" class="btn">
+            <button>Cerrar Sesión</button>
+        </a>
         <div class="carrito">
-            <img src="../img/caarrito.png" alt="">
+            <a href="/navbar/carrocompras.html"><img src="../img/caarrito.png" alt=""></a>
         </div>
     </header>
     <br>
@@ -38,7 +43,7 @@
     <br>
     <section class="flex-container5">
         <article class="card">
-            <img src="../img/f-35.jpeg" alt="">
+            <img src="../img/plastimodelismo/f-35.jpeg" alt="">
             <h3 id="title">F-35 Lightning II</h3>
             <strong><p class="text4">Italeri - 1/72</p></strong> 
             <p class="text4">$38.900</p>
@@ -52,7 +57,7 @@
             <button class="btn">COMPRAR</button>
         </article>
         <article class="card">
-            <img src="../img/A-10.jpeg" alt="">
+            <img src="../img/plastimodelismo/A-10.jpeg" alt="">
             <h3 id="title">A-10A Thunderbolt</h3>
             <strong><p class="text4">Tamiya - 1/48</p></strong>
             <p class="text4">$59.500</p>
@@ -66,31 +71,59 @@
             <button class="btn">COMPRAR</button>
         </article>
         <article class="card">
-            <img src="../img/A-H1.png" alt="">
+            <img src="../img/plastimodelismo/A-H1.png" alt="">
             <h3 id="title">A-H1G Cobra</h3>
             <strong><p class="text4">Revell - 1/72.</p></strong>
             <p class="text4">$28.920</p>
             <button class="btn">COMPRAR</button>
         </article>
         <article class="card">
-            <img src="../img/bac.webp" alt="">
+            <img src="../img/plastimodelismo/bac.webp" alt="">
             <h3 id="title">Bac Lightning F.mk.3</h3>
             <strong><p class="text4">Trumpeter - 1/72</p></strong>
             <p class="text4">$40.200</p>
             <button class="btn">COMPRAR</button>
         </article>
         <article class="card">
-            <img src="../img/leopard.webp" alt="">
+            <img src="../img/plastimodelismo/leopard.webp" alt="">
             <h3 id="title">Leopard 2a5/a5nl</h3>
             <strong><p class="text4">Revell - 1/72</p></strong>
             <p class="text4"> $23.900</p>
             <button class="btn">COMPRAR</button>
         </article>
         <article class="card">
-            <img src="../img/mig-17.webp" alt="">
+            <img src="../img/plastimodelismo/mig-17.webp" alt="">
             <h3 id="title">Mig-17f Fresco</h3>
             <strong><p class="text4">Airfix- 1/72</p></strong>
             <p class="text4">$25.000</p>
+            <button class="btn">COMPRAR</button>
+        </article>
+        <article class="card">
+            <img src="../img/plastimodelismo/A380.png" alt="">
+            <h3 id="title">Airbus A380-800 Emirates  "Wild Life"  </h3>
+            <strong><p class="text4">Revell - 1/144</p></strong>
+            <p class="text4">$70.423,18</p>
+            <button class="btn">COMPRAR</button>
+        </article>
+        <article class="card">
+            <img src="../img/plastimodelismo/EC135.png" alt="">
+            <h3 id="title">Airbus Helicopters EC135 Air-Glaciers</h3>
+            <strong><p class="text4">Revell - 1/72</p></strong>
+            <p class="text4">$13.997</p>
+            <button class="btn">COMPRAR</button>
+        </article>
+        <article class="card">
+            <img src="../img/plastimodelismo/fa-18superhornet132.webp" alt="">
+            <h3 id="title">F/a-18f Super Hornet</h3>
+            <strong><p class="text4">Revell - 1/32</p></strong>
+            <p class="text4">$153.190</p>
+            <button class="btn">COMPRAR</button>
+        </article>
+        <article class="card">
+            <img src="../img/plastimodelismo/tornado132.webp" alt="">
+            <h3 id="title">Tornado Gr Mk.1 Raf Gulf</h3>
+            <strong><p class="text4">Revell - 1/32</p></strong>
+            <p class="text4">$114.390</p>
             <button class="btn">COMPRAR</button>
         </article>
     </section>
@@ -127,6 +160,8 @@
         <div class="grupo-2">
             <small>&copy; 2023 <b>Haven Hobby</b> - Todos los derechos reservados</small>
         </div>
-    </footer>   
+    </footer> 
+    <script src="../lib/utils.js"></script>
+    <script src="../script.js"></script>  
 </body>
 </html>

@@ -6,6 +6,7 @@
     <title>Contacto | Haven Hobby</title>
     <link rel="stylesheet" href="../style.css">
 </head>
+<body Contacto>
 <header class="header">
     <div class="logo">
          <a href="../index.html"><img src="../img/Logo.png" alt="Logo de la marca"></a>
@@ -18,15 +19,20 @@
                 <ul class="desplegable">
                     <li><a class="desplegable-anchor" href="../Categorias/plastimodelismo.html">Plastimodelismo</a></li>
                     <li><a class="desplegable-anchor" href="../Categorias/Rompecabezas.html">Rompecabezas</a></li>
-                    <li><a class="desplegable-anchor" href="../Categorias/pinturas.html">Pinturas</a></li>
+                    <li><a class="desplegable-anchor" href="../Categorias/pinturas.html">Pinturas/Herramientas</a></li>
                 </ul>
             </li>     
             <li><a href="#">Contacto</a></li>            
         </ul>
     </nav>
-    <a href="/page/login/login.html" class="btn"><button>Iniciar Sesión</button></a>
+    <a id="button-iniciar-sesion" href="/page/login/login.html" class="btn">
+        <button>Iniciar Sesión</button>
+    </a>
+    <a id="button-cerrar-sesion" href="/index.html" class="btn">
+        <button>Cerrar Sesión</button>
+    </a>
     <div class="carrito">
-        <img src="../img/caarrito.png" alt="">
+        <a href="/navbar/carrocompras.html"><img src="../img/caarrito.png" alt=""></a>
     </div>
 </header>
 
@@ -87,5 +93,7 @@
         <small>&copy; 2023 <b>Haven Hobby</b> - Todos los derechos reservados</small>
     </div>
 </footer>
-
-<body>
+<script src="../lib/utils.js"></script>
+<script src="../script.js"></script>
+</body>
+</html>
