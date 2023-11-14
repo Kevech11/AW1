@@ -1,11 +1,11 @@
 
-var emailInput = document.querySelector("#email");
-var passwordInput = document.querySelector("#password");
-var buttonLogin = document.querySelector("#loguear");
+let emailInput = document.querySelector("#email");
+let passwordInput = document.querySelector("#password");
+let buttonLogin = document.querySelector("#loguear");
 
 buttonLogin.onclick = function() {
-    var emailUser = emailInput.value;
-    var passwordUser = passwordInput.value;
+    let emailUser = emailInput.value;
+    let passwordUser = passwordInput.value;
 
     const findUser = localStorage.getItem(emailUser); 
 

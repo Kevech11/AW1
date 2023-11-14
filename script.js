@@ -1,6 +1,6 @@
-var loggedUser = localStorage.getItem("logged.in.user");
-var buttonIniciarSesion = document.querySelector("#button-iniciar-sesion");
-var buttonCerrarSesion = document.querySelector("#button-cerrar-sesion");
+let loggedUser = localStorage.getItem("logged.in.user");
+let buttonIniciarSesion = document.querySelector("#button-iniciar-sesion");
+let buttonCerrarSesion = document.querySelector("#button-cerrar-sesion");
 
 buttonCerrarSesion.onclick = function() {
     localStorage.removeItem("logged.in.user");
