@@ -432,8 +432,6 @@ label{
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    /* Producto Estilo Card */
     background-color: white;
     border-radius: 20px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
@@ -472,4 +470,7 @@ label{
     align-self: flex-end;
     margin-left: 220px;
     padding: 5px;
+}
+.total{
+    color: red;
 }
