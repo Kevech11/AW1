@@ -10,15 +10,16 @@ body{
     margin: 0;
 }
 
-.header{                                        /*navegador*/
+.header {                                        /*navegador*/
     background-color: rgb(31, 31, 78);
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     height: 105px;
-    padding:25px 10%;   
+    padding: 25px 10%;   
     position: fixed;
+    top: 0;
     z-index: 100;  
 }
 .header .logo img{
@@ -231,6 +232,11 @@ body{
     margin: 0px;
     text-align: center;
 }
+
+.boton{
+   display: flex;
+}
+
 .flex-container4 .box-ingresos img{   
    height: 110px;
    width: 135px;
@@ -363,15 +369,19 @@ label{
     height: 250px;
     border-radius: 15px 15px 0 0;
 }
-.card > button {
+.card .boton > button {
     align-self: flex-end;
-    margin-right: 20px;
+    margin-right: -90px;
     padding: 5px;
     background-color: rgb(6, 206, 212);
     color: antiquewhite;
     margin-bottom: 10px;
     border: 0;
     border-radius: 5px;
+    cursor: pointer;
+}
+.card .boton > button:hover{
+    transform: scale(1.1);
 }
 .card1 > img {
     width: 100%;
@@ -390,11 +400,76 @@ label{
 }
 .card1 .boton > button {
     align-self: flex-end;
-    margin-right: 20px;
+    margin-right: -90px;
     padding: 5px;
     background-color: rgb(6, 206, 212);
     color: antiquewhite;
     margin-bottom: 10px;
     border: 0;
     border-radius: 5px;
+    cursor: pointer;
+}
+.card1 .boton > button:hover{
+    transform: scale(1.1);
+}
+.card .boton .quitar{
+    margin-right: 10px;
+}
+.card .boton .agregar{
+    margin-right: 30px;
+}
+.card1 .boton .quitar{
+    margin-right: 10px;
+}
+.card1 .boton .agregar{
+    margin-right: 30px;
+}
+.cantidad{
+    margin-right: 10px;
+}
+
+.producto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* Producto Estilo Card */
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+.producto > * {
+    flex-basis: calc(100% / 3);
+    text-align: center;
+}
+#carrito-contenedor {
+    width: 70% !important;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#padre-carrito-contenedor {
+    width: 100%; /* 100% de la pantalla */
+    display: flex;
+    align-items: center; /* para centrar el hijo en medio de la pantalla */
+    flex-direction: column;
+    gap: 20px;
+}
+
+#informacion {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+
+}
+.boton-carrito{
+    background-color: rgb(6, 206, 212);
+    color: antiquewhite;
+    margin-bottom: 10px;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: flex-end;
+    margin-left: 220px;
+    padding: 5px;
 }
