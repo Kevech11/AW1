@@ -2,10 +2,10 @@
     --green: hsl(162, 45%,56%);
     --lead: hsl(162, 2%,56%);
     --blue: hsl(220, 85%,57%);
-    --violet: hsl(272, 92%, 32%);
+    --violet: rgb(31, 31, 78);
     --text-white: hsl(0, 0%,100%);
     --text-light-gray: hsl(0, 0%,90%);
-    --body-bg-color: hsl(200, 54%,12%);
+    --body-bg-color: rgb(31, 31, 78);
     --glass-bg-color: hsl(0, 0%,100%, 0.05);
     --border-color: hsl(0, 0%,100%, 0.25);
     --blur:--blur(10px);
@@ -48,7 +48,7 @@ body::before{
 }
 
 body::after{
-    background-color: var(--violet);
+    background-color: rgb(31, 31, 78);
     right: 0;
     top: 0;
     transform: translate(50%);
@@ -74,6 +74,7 @@ a{
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    
 }
 
 .form-content{
@@ -214,4 +215,10 @@ a{
     .form-content h3{
         font-size: 24px;
     }
+}
+.imagen-logo{
+    height: 95px;
+    width: auto;  
+    margin-left:  100px;
+    margin-bottom:  
 }

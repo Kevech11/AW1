@@ -346,6 +346,7 @@ label{
 }
 .contactos{
     display: flex;
+    margin-left: 400px;
 }
 
 .flex-container5{                        
@@ -452,6 +453,7 @@ label{
     align-items: center; /* para centrar el hijo en medio de la pantalla */
     flex-direction: column;
     gap: 20px;
+    min-height: 37.5vh;
 }
 
 #informacion {
@@ -460,7 +462,7 @@ label{
     width: 70%;
 
 }
-.boton-carrito{
+.boton-comprar{
     background-color: rgb(6, 206, 212);
     color: antiquewhite;
     margin-bottom: 10px;
@@ -470,6 +472,18 @@ label{
     align-self: flex-end;
     margin-left: 220px;
     padding: 5px;
+    
+}
+.borrar-carrito{
+    background-color: rgb(6, 206, 212);
+    color: antiquewhite;
+    margin-bottom: 10px;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: flex-end;
+    margin-left:10px;
+    padding: 5px; 
 }
 .total{
     color: red;

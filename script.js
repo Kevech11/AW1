@@ -4,6 +4,7 @@ let buttonCerrarSesion = document.querySelector("#button-cerrar-sesion");
 
 buttonCerrarSesion.onclick = function() {
     localStorage.removeItem("logged.in.user");
+    localStorage.removeItem("carrito");
 }
 
 if (loggedUser) {
@@ -20,9 +21,12 @@ if (loggedUser) {
 // Carrito
 let items = document.querySelectorAll('.item-carrito');
 
+// El click que agrega al carrito el producto
 if (items) {
     for (let item of items) {
-        item.onclick = function () {
+        let btn = item.querySelector('.btn');
+
+        btn.onclick = function () {
             // Saca lo que quiere guardar del producto
             let precio = item.querySelector('.price').innerText;
             let nombre = item.querySelector('#title').innerText;
@@ -32,7 +36,7 @@ if (items) {
                 precio,
                 nombre,
                 cantidad,
-                marca            
+                marca
             };
     
             // Lo guarda
@@ -50,9 +54,23 @@ if (items) {
 
 //aumentar - disminuir
 
-function totalClick (click){
-    const totalClick = document.getElementById('totalClicks');
-    const sumvalue = parseInt (totalClicks.innerText) + click;
-    console.log (sumvalue + click);
-    totalClicks.innerText = sumvalue;
+function totalClick(click, cantidad) {
+    const sumvalue = parseInt(cantidad.innerText) + click;
+    cantidad.innerText = sumvalue;
 }
+
+let botones = document.querySelectorAll('.boton'); // -, +, cantidad
+
+for(let boton of botones) {
+    let quitar = boton.querySelector('.quitar');
+    let agregar = boton.querySelector('.agregar');
+    let cantidad = boton.querySelector('.cantidad');
+
+    quitar.onclick = function() {
+        totalClick(-1, cantidad);
+    };
+    agregar.onclick = function() {
+        totalClick(1, cantidad);
+    };
+}
+

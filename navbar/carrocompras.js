@@ -17,8 +17,7 @@ for (let producto of carrito) {
             <p>${producto.cantidad}</p>            
         </div>
     `;
-
-    acumuladorPrice = acumuladorPrice + Number(producto.precio.slice(1));
+    acumuladorPrice = acumuladorPrice + Number(producto.precio.slice(1).replace('.', '')) * Number(producto.cantidad);
     acumuladorCantidad = acumuladorCantidad + Number(producto.cantidad);
 }
 
@@ -27,3 +26,9 @@ carritoHtml.innerHTML = html;
 price.innerText = acumuladorPrice; 
 cantidad.innerText = acumuladorCantidad;
 
+let borrarCarritoBoton = document.querySelector('.borrar-carrito');
+
+borrarCarritoBoton.onclick = function() {
+    localStorage.removeItem('carrito');
+    location.reload();
+}
