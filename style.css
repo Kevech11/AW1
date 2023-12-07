@@ -282,7 +282,7 @@ figure {
     display: inline-block;
     text-decoration: none;
     width: 45px;
-    color: antiquewhite;
+    color: #fff;
     height: 45px;
     line-height: 45px;
     margin-right: 10px;
@@ -293,6 +293,7 @@ figure {
 .pie-pagina .grupo-1 .red-social a:hover{
     color: rgb(240, 240, 32);
 }
+
 .pie-pagina .grupo-2{
     padding: 15px 10px;
     background-color: rgb(21, 21, 95);

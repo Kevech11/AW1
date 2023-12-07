@@ -1,4 +1,3 @@
-
 // Funcional
 let carrito = JSON.parse(localStorage.getItem('carrito'));
 let carritoHtml = document.querySelector('#carrito-contenedor');
@@ -30,5 +29,7 @@ let borrarCarritoBoton = document.querySelector('.borrar-carrito');
 
 borrarCarritoBoton.onclick = function() {
     localStorage.removeItem('carrito');
+    alert('Compra Cancelada')
     location.reload();
 }
+
