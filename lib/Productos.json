@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "nombre": "Eurofighter Thypoon",
+    "descripcion": "Maqueta - Revell - 1/48",
+    "precio": 40200,
+    "imagen": "thypoon.png"
+  },
+  {
+    "id": 2,
+    "nombre": "Castillo Ardenas",
+    "desccripcion": "Rompecabezas - Ravensburger 1000 Pzs",
+    "precio": 25500,
+    "imagen": "castillo1000p.webp"
+  }
+]

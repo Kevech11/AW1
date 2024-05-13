@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "id_usuario": 1,
+    "fecha": "2024-04-18",
+    "total": 105900,
+    "dirección": "Calle Principal 123",
+    "productos": [
+      {
+        "id": 1,
+        "cantidad": 2
+      },
+      {
+        "id": 2,
+        "cantidad": 1
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "id_usuario": 2,
+    "fecha": "2024-04-17",
+    "total": 40200,
+    "dirección": "Avenida Central 456",
+    "productos": [
+      {
+        "id": 1,
+        "cantidad": 1
+      }
+    ]
+  }
+]
