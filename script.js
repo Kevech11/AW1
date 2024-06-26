@@ -18,39 +18,7 @@ if (loggedUser) {
 }
 
 
-// Carrito
-let items = document.querySelectorAll('.item-carrito');
 
-// El click que agrega al carrito el producto
-if (items) {
-    for (let item of items) {
-        let btn = item.querySelector('.btn');
-
-        btn.onclick = function () {
-            // Saca lo que quiere guardar del producto
-            let precio = item.querySelector('.price').innerText;
-            let nombre = item.querySelector('#title').innerText;
-            let cantidad = item.querySelector('.cantidad').innerText;
-            let marca = item.querySelector('.marca').innerText;       
-            let productoAGuardar = {
-                precio,
-                nombre,
-                cantidad,
-                marca
-            };
-    
-            // Lo guarda
-            let carrito = JSON.parse(localStorage.getItem('carrito'));
-    
-            if (carrito) {
-                carrito.push(productoAGuardar);
-            } else {
-                carrito = [productoAGuardar];
-            }    
-            localStorage.setItem('carrito', JSON.stringify(carrito));
-        }
-    }
-}
 
 //aumentar - disminuir
 
@@ -74,3 +42,17 @@ for(let boton of botones) {
     };
 }
 
+
+
+
+async function obtenerVentas() {
+    const response = await fetch(`http://localhost:3000/ventas`, {
+        method: 'GET'
+    });
+
+    const json = await response.json();
+
+    console.log('Ventas fetch; ', json);
+}
+
+obtenerVentas(); 

@@ -7,12 +7,15 @@
     "lib": "lib"
   },
   "scripts": {
-    "start": "node servidor.js"
+    "start": "node servidor.js",
+    "dev": "nodemon servidor.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.19.2"
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "nodemon": "^3.1.1"
   }
 }

@@ -3,14 +3,256 @@
     "id": 1,
     "nombre": "Eurofighter Thypoon",
     "descripcion": "Maqueta - Revell - 1/48",
-    "precio": 40200,
-    "imagen": "thypoon.png"
+    "precio":"$40.200",
+    "imagen": "/img/thypoon.png",
+    "categoria": "aviones"
   },
   {
     "id": 2,
     "nombre": "Castillo Ardenas",
-    "desccripcion": "Rompecabezas - Ravensburger 1000 Pzs",
-    "precio": 25500,
-    "imagen": "castillo1000p.webp"
+    "descripcion": "Rompecabezas - Ravensburger 1000 Pzs",
+    "precio": "$25.500",
+    "imagen": "/img/rompecabezas/castillo1000p.webp",
+    "categoria": "rompecabezas"
+  },
+  {
+    "id": 3,
+    "nombre": "F/A-18F Super Hornet",
+    "descripcion": "Maqueta - Revell - 1/32",
+    "precio": "$220.000",
+    "imagen": "/img/plastimodelismo/fa-18superhornet132.webp",
+    "categoria":"aviones"
+  },
+  {
+    "id": 5,
+    "nombre": "Airbus Helicopters EC135",
+    "descripcion": "Maqueta - Revell - 1/72",
+    "precio": "$25.780",
+    "imagen": "/img/plastimodelismo/EC135.png",
+    "categoria": "helicopteros"
+  },
+  {
+    "id": 6,
+    "nombre": "Flakpanzer III Ostwind",
+    "descripcion": "Maqueta - Revell - 1/72",
+    "precio": "$25.780",
+    "imagen": "/img/flakpanzer.jpeg",
+    "categoria": "tanques"
+  },
+  {
+    "id": 7,
+    "nombre": "Tornado Gr Mk.1 Raf Gulf",
+    "descripcion": "Maqueta - Revell - 1/32",
+    "precio": "$210.000",
+    "imagen": "/img/plastimodelismo/tornado132.webp",
+    "categoria":"aviones"
+  },
+  {
+    "id": 8,
+    "nombre": "Model Air - 71076",
+    "descripcion": "Pintura - Vallejo",
+    "precio": "$6.500",
+    "imagen": "/img/pinturas/vallejoColorPiel.webp",
+    "categoria": "insumos"
+  },
+  {
+    "id": 9,
+    "nombre": "Masilla Plastica",
+    "descripcion": "Insumos - Vallejo",
+    "precio": "$7.800",
+    "imagen": "/img/pinturas/masillaplastica.png",
+    "categoria":"insumos"
+  },
+  {
+    "id": 10,
+    "nombre": "Leopard 2a5/a5nl",
+    "descripcion": "Maqueta - Revell - 1/72",
+    "precio": "$45.900",
+    "imagen": "/img/plastimodelismo/leopard.webp",
+    "categoria":"tanques"
+  },
+  {
+    "id": 11,
+    "nombre": "Masking Tape 20mm",
+    "descripcion": "Insumos - Revell",
+    "precio": "$8.500",
+    "imagen": "/img/pinturas/mask20mm.jpeg",
+    "categoria":"insumos"
+  },
+  {
+    "id": 12,
+    "nombre": "CH-53 GS/G",
+    "descripcion": "Maqueta - Revell - 1/48",
+    "precio": "$76.500",
+    "imagen": "/img/plastimodelismo/CH-53.jpeg",
+    "categoria":"helicopteros"
+  },
+  {
+    "id": 13,
+    "nombre": "Airbus A380-800 Emirates",
+    "descripcion": "Maqueta - Revell - 1/144",
+    "precio": "$189.000",
+    "imagen": "/img/plastimodelismo/A380.png",
+    "categoria":"aviones"
+  },
+  {
+    "id": 14,
+    "nombre": "Model Air - 71004",
+    "descripcion": "Pintura - Vallejo",
+    "precio": "$6.500",
+    "imagen": "/img/pinturas/vallejoColorAzul.webp",
+    "categoria":"insumos"
+  },
+  {
+    "id": 15,
+    "nombre": "New york",
+    "descripcion": "Rompecabezas - Ravensburger 1000 Pzs",
+    "precio": "$25.500",
+    "imagen": "/img/rompecabezas/new york.webp",
+    "categoria":"rompecabezas"
+  },
+  {
+    "id": 16,
+    "nombre": "Michelangelo",
+    "descripcion": "Rompecabezas - Ravensburger 5000 Pzs",
+    "precio": "$89.900",
+    "imagen": "/img/rompecabezas/michelangelo.webp",
+    "categoria":"rompecabezas"
+  },
+  {
+    "id": 17,
+    "nombre": "Primer Verde",
+    "descripcion": "Pintura - Vallejo",
+    "precio": "$14.500",
+    "imagen": "/img/pinturas/primer verde.webp",
+    "categoria":"insumos"
+  },
+  {
+    "id": 18,
+    "nombre": "AH-1G Cobra",
+    "descripcion": "Maqueta - Revell - 1/72",
+    "precio": "$45.000",
+    "imagen": "/img/plastimodelismo/A-H1.png",
+    "categoria":"helicopteros"
+  },
+  {
+    "id": 19,
+    "nombre": "Stencils Insig. Alemanes",
+    "descripcion": "Insumos - Vallejo - 1/35",
+    "precio": "$6.800",
+    "imagen": "/img/pinturas/stencilaleman.webp",
+    "categoria":"insumos"
+  },
+  {
+    "id": 20,
+    "nombre": "Premium Rojo",
+    "descripcion": "Pintura - Vallejo",
+    "precio": "$16.000",
+    "imagen": "/img/pinturas/premium rojo.webp",
+    "categoria":"insumos"
+  },
+  {
+    "id": 21,
+    "nombre": "Mig-17f Fresco",
+    "descripcion": "Maqueta - Airfix - 1/72",
+    "precio": "$51.500",
+    "imagen": "/img/plastimodelismo/mig-17.webp",
+    "categoria":"aviones"
+  },
+  {
+    "id": 22,
+    "nombre": "Chocolates",
+    "descripcion": "Rompecabezas - Ravensburger 2000 Pzs",
+    "precio": "$37.500",
+    "imagen": "/img/rompecabezas/chocolates.webp",
+    "categoria":"rompecabezas"
+  },
+  {
+    "id": 23,
+    "nombre": "A-10A Thunderbolt",
+    "descripcion": "Maqueta - Tamiya - 1/48",
+    "precio": "$65.000",
+    "imagen": "/img/plastimodelismo/A-10.jpeg",
+    "categoria":"aviones"
+  },
+  {
+    "id": 24,
+    "nombre": "Notredam",
+    "descripcion": "Rompecabezas - Ravensburger 1500 Pzs",
+    "precio": "$16.000",
+    "imagen": "/img/rompecabezas/notredam.webp",
+    "categoria":"rompecabezas"
+  },
+  {
+    "id": 25,
+    "nombre": "F-35 Lightning II",
+    "descripcion": "Maqueta - Italeri - 1/72",
+    "precio": "$32.000",
+    "imagen": "/img/plastimodelismo/f-35.jpeg",
+    "categoria":"aviones"
+  },
+  {
+    "id": 26,
+    "nombre": "AH-64D Apache Block II",
+    "descripcion": "Maqueta - Academy - 1/72",
+    "precio": "$48.000",
+    "imagen": "/img/plastimodelismo/AH-64D.jpg",
+    "categoria":"helicopteros"
+  },
+  {
+    "id": 27,
+    "nombre": "Model Air - 71002",
+    "descripcion": "Pintura - vallejo",
+    "precio": "$5.500",
+    "imagen": "/img/pinturas/71002.jpeg",
+    "categoria":"insumos"
+  },
+  {
+    "id": 28,
+    "nombre": "Dubai",
+    "descripcion": "Rompecabezas - Ravensburger 1500 Pzs",
+    "precio": "$25.000",
+    "imagen": "/img/rompecabezas/dubai.webp",
+    "categoria":"rompecabezas"
+  },
+  {
+    "id": 29,
+    "nombre": "Bac Lightning F.mk.3",
+    "descripcion": "Maqueta - Trumpeter - 1/72",
+    "precio": "$40.200",
+    "imagen": "/img/plastimodelismo/bac.webp",
+    "categoria":"aviones"
+  },
+  {
+    "id": 30,
+    "nombre": "Tiger II Ausf.B",
+    "descripcion": "Maqueta - Revell - 1/72",
+    "precio": "$55.000",
+    "imagen": "/img/plastimodelismo/TigerII.webp",
+    "categoria":"tanques"
+  },
+  {
+    "id": 31,
+    "nombre": "Atardecer Lavanda",
+    "descripcion": "Rompecabezas - Ravensburger 1000 Pzs",
+    "precio": "$20.000",
+    "imagen": "/img/rompecabezas/atardecer 1000p.webp",
+    "categoria":"rompecabezas"
+  },
+  {
+    "id": 32,
+    "nombre": "M 109 US Army",
+    "descripcion": "Maqueta - Revell - 1/72",
+    "precio": "$58.000",
+    "imagen": "/img/plastimodelismo/M109.jpeg",
+    "categoria":"tanques"
+  },
+  {
+    "id": 31,
+    "nombre": "Mapa Antiguo",
+    "descripcion": "Rompecabezas - Ravensburger 1500 Pzs",
+    "precio": "$23.000",
+    "imagen": "/img/rompecabezas/mapa 1500p.webp",
+    "categoria":"rompecabezas"
   }
 ]
