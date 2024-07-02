@@ -2,13 +2,21 @@
 const cors = require ("cors")
 const express = require('express');
 const path = require ("path");
-const productos = require ("./lib/Productos.json")
-const ventas = require ("./lib/Ventas.json")
-const usuario = require ("./lib/Usuario.json")
+const productos = require ("./data/Productos.json")
+const ventas = require ("./data/Ventas.json")
+const usuario = require ("./data/Usuario.json")
 
 //Importar Express.js
 const app = express();
 const port = 3000;
+
+// Arrancar el servidor
+app.listen(port, () => {
+  console.log(`Servidor Express corriendo en http://localhost:${port}`);
+});
+
+
+
 
 //Middleware para manejar datos JSON
 app.use(express.json());
@@ -80,8 +88,5 @@ app.delete('/ventas/:id', (req, res) => {
   }
 });
 
-// Arrancar el servidor
-app.listen(port, () => {
-  console.log(`Servidor Express corriendo en http://localhost:${port}`);
-});
+
 
