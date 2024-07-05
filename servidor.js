@@ -4,7 +4,7 @@ const express = require('express');
 const path = require ("path");
 const productos = require ("./data/Productos.json")
 const ventas = require ("./data/Ventas.json")
-const usuario = require ("./data/Usuario.json")
+//import userRouter from './route/Usuarios.js'
 
 //Importar Express.js
 const app = express();
@@ -15,7 +15,7 @@ app.listen(port, () => {
   console.log(`Servidor Express corriendo en http://localhost:${port}`);
 });
 
-
+//app.use('/user', userRouter)
 
 
 //Middleware para manejar datos JSON
@@ -36,6 +36,8 @@ app.get('/ventas', (req, res) => {
 app.get('/productos', (req, res) => {
   res.json(productos);
 });
+
+
 
 // Obtener un producto por su ID
 app.get('/productos/:id', (req, res) => {
